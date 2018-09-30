@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss"
+	],
+	"sourcesContent": [
+		"body,h1,h2,h3,h4,h5,h6 {font-family: \"Montserrat\", sans-serif;}\r\nbody, html {\r\n    height: 100%;\r\n    color: #777;\r\n    line-height: 1.8;\r\n}\r\n\r\n.font-italic {\r\n    font-family: 'Charmonman', 'sans-serif' !important;\r\n    font-weight: 600;\r\n    line-height: 1.7;\r\n    //font-size: 2em !important;\r\n}\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,CAAC;EAAC,WAAW,EAAE,wBAAwB,GAAG;;AAChE,AAAA,IAAI,EAAE,IAAI,CAAC;EACP,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,GAAG,GACnB;;AAED,AAAA,YAAY,CAAC;EACT,WAAW,EAAE,qCAAqC;EAClD,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG,GAEnB"
+}

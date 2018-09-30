@@ -1,0 +1,13 @@
+{
+  "name": "tonon-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
