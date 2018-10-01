@@ -157,12 +157,12 @@
 
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
-        <h3 onclick="mapsSelector()" class="w3-center">Chiesa  <i class="fa fa-map"></i></h3>
+        <h3 onclick="mapsSelector(true)" class="w3-center">Chiesa  <i class="fa fa-map"></i></h3>
       </div>
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-center w3-padding-large">
-        <h3 onclick="mapsSelector()" class="w3-center">Ristorante <i class="fa fa-map"></i></h3>
+        <h3 onclick="mapsSelector(false)" class="w3-center">Ristorante <i class="fa fa-map"></i></h3>
       </div>
     </div>
   </div>
@@ -178,15 +178,24 @@
 
     <!-- Add Google Maps -->
     <script>
-      function mapsSelector() {
+      function mapsSelector(chiesa) {
         if /* if we're on iOS, open in Apple Maps */
         ((navigator.platform.indexOf("iPhone") != -1) ||
         (navigator.platform.indexOf("iPad") != -1) ||
           (navigator.platform.indexOf("iPod") != -1)) {
-          window.open("maps://maps.google.com/maps?daddr=45.904740,12.376458&amp;ll=");
+            if(chiesa){
+              window.open("maps://maps.google.com/maps?daddr=45.904740,12.376458&amp;ll=");
+            }else {
+              //45.846959, 12.326929
+              window.open("maps://maps.google.com/maps?daddr=45.846959, 12.326929&amp;ll=");
+            }
         }
         else /* else use Google */ {
-          window.open("https://maps.google.com/maps?daddr=45.904740,12.376458&amp;ll=");
+          if (chiesa) {
+            window.open("https://maps.google.com/maps?daddr=45.904740,12.376458&amp;ll=");
+          }else {
+            window.open("https://maps.google.com/maps?daddr=45.846959,12.326929&amp;ll=");
+          }
         }
       }
 
