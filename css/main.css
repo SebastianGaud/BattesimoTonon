@@ -11,4 +11,7 @@ body, html {
   font-weight: 600;
   line-height: 1.7; }
 
+.pointer {
+  cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
